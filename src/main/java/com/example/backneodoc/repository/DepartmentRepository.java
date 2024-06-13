@@ -1,0 +1,10 @@
+package com.example.backneodoc.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.backneodoc.models.Department;
+
+public interface DepartmentRepository extends JpaRepository<Department, Long> {
+	 Department findByName(String name);
+	
+}
